@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-const GifApp = () => {
+const GifApp = ( { defaultCategories = [] }) => {
     
-    const [categories, setCategories] = useState(['one punch'])
+    const [categories, setCategories] = useState( defaultCategories )
 
     // const handleAdd = () => {
     //     setCategories((categ) => [...categ, 'SoyNueva']);
